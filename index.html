@@ -1249,16 +1249,16 @@
             event.preventDefault();
    
             const name = document.getElementById('name').value.trim();
+            const number = document.getElementById('number').value.trim();
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
-            const number = document.getElementById('number').value.trim();
    
             const sendBtn = document.getElementById('sendBtn');
             const spinner = document.getElementById('form-status');
             const sentStatus = document.getElementById('sentStatus');
    
-            if (!name || !email || !subject || !message) {
+            if (!name || !number || !email || !subject || !message) {
                sentStatus.textContent = "All fields are required.";
                sentStatus.className = "form-status error";
                sentStatus.classList.remove('hidden');
@@ -1269,7 +1269,7 @@
             spinner.classList.remove('hidden');
             sentStatus.classList.add('hidden');
    
-            const params = { name, email, subject, message };
+            const params = { name, number, email, subject, message };
    
             emailjs.send('service_tb3223j', 'template_xcc3sdo', params)
                .then(function(response) {
