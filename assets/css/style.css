@@ -938,7 +938,7 @@ Main Banner Area CSS
 }
 
 .main-banner-item {
-  background-image: url(../../assets/img/main-banner/main-banner-bg.jpg);
+  background-image: url(../../assets/img/Home_page.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -955,11 +955,15 @@ Main Banner Area CSS
   background-color: #f5edec;
 }
 .main-banner-item.banner-item-three {
-  background-image: url(https://alcs.nascorptechnologies.com/login/login2/stu2.png);
+  background-image: url(../../assets/img/f1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .main-banner-item.banner-item-four {
-  background-image: url(https://alcs.nascorptechnologies.com/login/login2/stu2.png);
+  background-image: url();
   background-attachment: fixed;
 }
 
@@ -5608,6 +5612,14 @@ Buy Now Btn
   100% { transform: rotate(360deg); }
 }
 
-.form-status.success { color: green; }
-.form-status.error { color: red; }
-.hidden { display: none; }
+.hidden {
+  display: none;
+}
+.form-status.success {
+  color: green;
+  font-weight: 600;
+}
+.form-status.error {
+  color: red;
+  font-weight: 600;
+}
