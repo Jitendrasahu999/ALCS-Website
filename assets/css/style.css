@@ -5629,3 +5629,20 @@ Buy Now Btn
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
+/* Default desktop style */
+.responsive-video-frame iframe {
+    width: 900px;
+    height: 500px;
+    border: none;
+    transition: transform 0.5s ease;
+    max-width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 107px) {
+    .responsive-video-frame iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.31; /* 655 / 500 for same ratio */
+    }
+}
