@@ -1629,7 +1629,7 @@ Teacher Area CSS
   right: 0;
   top: 0;
   z-index: -1;
-  border-radius: 50%;
+  border-radius: 20%;
   transition: 0.5s;
   animation: border-transform-default 30s linear infinite alternate forwards;
 }
@@ -5622,4 +5622,12 @@ Buy Now Btn
 .form-status.error {
   color: red;
   font-weight: 600;
+}
+.single-teacher .image img {
+  height: 300px; /* Adjust as needed */
+  object-fit: cover;
+  width: 100%;
+  }
+.single-teacher {
+  min-height: auto; /* Optional if height is preset somewhere */
 }
